@@ -24,29 +24,29 @@ namespace MyLightSensor {
 
      /**
      * Read Analog Sensor P0-P4,P10 
-     * @param pinCH sensor's active pin
+     * @param sensorCH sensor's active pin
      * @return number returns analog value from 0 to 1023
      */
     //% blockId="MySensor_readSensor" block="analog sensor %sensorSEL"
     //% weight=100
-    export function readSensor(pinCH: sensorSEL): number{
+    export function readSensor(sensorCH:sensorSEL): number{
 
-	if(pinCH == sensorSEL.S0){
+	if(sensorCH == sensorSEL.S0){
 	    return pins.analogReadPin(AnalogPin.P0)
         }
-	if(pinCH == sensorSEL.S1){
+	if(sensorCH == sensorSEL.S1){
 	    return pins.analogReadPin(AnalogPin.P1)
         }
-	if(pinCH == sensorSEL.S2){
+	if(sensorCH == sensorSEL.S2){
 	    return pins.analogReadPin(AnalogPin.P2)
         }
-	if(pinCH == sensorSEL.S3){
+	if(sensorCH == sensorSEL.S3){
 	    return pins.analogReadPin(AnalogPin.P3)
         }
-	if(pinCH == sensorSEL.S4){
+	if(sensorCH == sensorSEL.S4){
 	    return pins.analogReadPin(AnalogPin.P4)
         }
-	if(pinCH == sensorSEL.S10){
+	if(sensorCH == sensorSEL.S10){
 	    return pins.analogReadPin(AnalogPin.P10)
         }
     }
