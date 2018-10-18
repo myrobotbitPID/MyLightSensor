@@ -1,7 +1,7 @@
 /**
  * support for motor
  */
-//% weight=10 icon="\uf21c" color=#FF7210 block="Magibit Sensor"
+//% weight=10 icon="\uf21c" color=#FF7210 block="MyLightSensor"
 namespace MyLightSensor {
 
     export enum LightSensorPins {
