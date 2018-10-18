@@ -29,7 +29,7 @@ namespace MyLightSensor {
      */
     //% blockId="MySensor_readSensor" block="analog sensor %sensorSEL"
     //% weight=100
-    export function readSensor(pinCH:sensorSEL): number{
+    export function readSensor(pinCH: sensorSEL): number{
 
 	if(pinCH == sensorSEL.S0){
 	    return pins.analogReadPin(AnalogPin.P0)
