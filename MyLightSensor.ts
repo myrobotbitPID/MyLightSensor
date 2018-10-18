@@ -20,7 +20,7 @@ enum sensorSEL {
  * Custom blocks
  */
 //% weight=50 color=##006600 icon="\uf11e"
-namespace MySensor {
+namespace MyLightSensor {
 
      /**
      * Read Analog Sensor P0-P4,P10 
