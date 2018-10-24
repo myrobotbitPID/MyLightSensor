@@ -1,10 +1,10 @@
 /**
  * support for Light sensor
  */
-//% weight=10 icon="\uf11e" color=#FF7210 block="MyLightSensor"
-namespace MyLightSensor {
+//% weight=10 icon="\uf11e" color=#33ccff block="MySensor"
+namespace MySensor {
 
-    export enum LightSensorPins {
+    export enum analogPins {
         P0,
         P1,
         P2,
@@ -19,22 +19,22 @@ namespace MyLightSensor {
      * @param pin       sensor's active pin
      * @return number   returns analog value from 0 to 1023
      */
-    //% blockId=magibit_sensor_light_read
-    //% block="read analog light sensor |%pin|"
+    //% blockId=MySensor_analogRead
+    //% block="analog read sensor |%pin|"
     //% weight=80
-    export function lightSensorReadValue(pin: LightSensorPins): number {
+    export function analogRead(pin: analogPins): number {
         switch (pin) {
-            case LightSensorPins.P0:
+            case analogPins.P0:
                 return pins.analogReadPin(AnalogPin.P0);
-            case LightSensorPins.P1:
+            case analogPins.P1:
                 return pins.analogReadPin(AnalogPin.P1);
-            case LightSensorPins.P2:
+            case analogPins.P2:
                 return pins.analogReadPin(AnalogPin.P2);
-            case LightSensorPins.P3:
+            case analogPins.P3:
                 return pins.analogReadPin(AnalogPin.P3);
-            case LightSensorPins.P4:
+            case analogPins.P4:
                 return pins.analogReadPin(AnalogPin.P4);
-            case LightSensorPins.P10:
+            case analogPins.P10:
                 return pins.analogReadPin(AnalogPin.P10);
             default:
                 return 0;
