@@ -15,15 +15,15 @@ namespace MySensor {
 
 
     /**
-     * read analog light sensor's value
-     * @param pin       sensor's active pin
-     * @return number   returns analog value from 0 to 1023
+     * read analog sensor value from P0 -P4 and P10
+     * @param selectpin         select analog pin to read
+     * @return number           returns analog value from 0 to 1023
      */
     //% blockId=MySensor_analogRead
-    //% block="analog read sensor |%pin|"
+    //% block="analog read sensor |%selectpin|"
     //% weight=80
-    export function analogRead(pin: analogPins): number {
-        switch (pin) {
+    export function analogRead(selectpin: analogPins): number {
+        switch (selectpin) {
             case analogPins.P0:
                 return pins.analogReadPin(AnalogPin.P0);
             case analogPins.P1:
